@@ -2,3 +2,60 @@
     max-width: 1000px;
     margin: auto;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*style dla header*/
+header {
+    background-image: url("images/header-photo.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 80vh;
+    color: #ffffff;
+}
+
+.toolbar {
+    overflow: hidden;
+}
+
+.logo, .menu {
+    float: left;
+}
+
+.logo {
+    padding: 20px;
+}
+
+.menu {
+    float: right;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+}
+
+ul {
+    padding: 20px;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.toolbar a, h1, h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.motto {
+    padding: 60px 40px;
+}
