@@ -1,5 +1,4 @@
 .all {
-    max-width: 1000px;
     margin: auto;
 }
 
@@ -18,6 +17,7 @@ header {
     background-size: cover;
     height: 80vh;
     color: #ffffff;
+    text-shadow: 0px 0px 10px #000000;
 }
 
 .toolbar {
@@ -46,16 +46,19 @@ ul {
     margin: 0;
 }
 
-a {
-    text-decoration: none;
-}
-
 .toolbar a, h1, h2 {
     color: #ffffff;
     text-transform: uppercase;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .motto {
     padding: 60px 40px;
 }
+
+.motto a {
+    text-decoration: none;
+    color: #ffffff;
+}
+/*style dla header*/
