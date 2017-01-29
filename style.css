@@ -95,3 +95,6 @@ fieldset{
     margin-left: auto;
     margin-right: auto;
 }
+.input_email{
+    width: 50%;
+}
