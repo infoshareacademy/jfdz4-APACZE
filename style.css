@@ -97,4 +97,9 @@ fieldset{
 }
 .input_email{
     width: 50%;
+
+}
+.input_submit{
+    width: 10%;
+
 }
