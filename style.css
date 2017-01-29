@@ -63,15 +63,29 @@ ul {
 }
 /*koniec: style dla header*/
 
+#function-short {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
 .function {
-    float: left;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 -2px 18px 0 rgba(72,89,102,.25);
+    border-radius: 10px;
     height: 25vh;
     width: 23%;
     margin: 1%;
+    /* kod sprzed flex-boxa:
+    float: left;
     display: inline-block;
-    text-align: center;
-    box-shadow: 0 -2px 18px 0 rgba(72,89,102,.25);
-    border-radius: 10px;
+    }*/
 }
 
 .icon {
