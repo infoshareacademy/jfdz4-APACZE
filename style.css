@@ -1,6 +1,7 @@
 .all {
-    max-width: 1000px;
     margin: auto;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
 body {
@@ -12,12 +13,11 @@ body {
 
 /*style dla header*/
 header {
-    background-image: url("images/header-photo.jpg");
-    background-repeat: no-repeat;
-    background-position: center center;
+    background: url("images/header-photo.jpg") no-repeat center center;
     background-size: cover;
     height: 80vh;
     color: #ffffff;
+    text-shadow: 0 0 10px #000000;
 }
 
 .toolbar {
@@ -46,16 +46,47 @@ ul {
     margin: 0;
 }
 
-a {
-    text-decoration: none;
-}
-
 .toolbar a, h1, h2 {
     color: #ffffff;
     text-transform: uppercase;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .motto {
     padding: 60px 40px;
+}
+
+.motto a {
+    text-decoration: none;
+    color: #ffffff;
+}
+/*koniec: style dla header*/
+
+.function {
+    float: left;
+    height: 25vh;
+    width: 23%;
+    margin: 1%;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 -2px 18px 0 rgba(72,89,102,.25);
+    border-radius: 10px;
+}
+
+.icon {
+    width: 25%;
+    height: 15vh;
+}
+
+.function > .icon {
+    margin: 1% auto; /*auto: ten zapis wyśrodkował obrazki w elemencie, patrz
+    http://www.creamsoft.com/blog/jak-wysrodkowac-element-na-stronie-www-za-pomoca-css-odpowiedz-na-wszystkie-pytania.html*/
+}
+
+#freepik {
+    float: left;
+    width: 100%;
+    font-size: smaller;
+    text-align: center;
 }
