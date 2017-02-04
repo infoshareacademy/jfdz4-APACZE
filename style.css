@@ -103,3 +103,14 @@ fieldset{
     width: 10%;
 
 }
+
+.email-contener{
+
+    height: 25vh;
+    width: 98%;
+    margin: 1%;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 -2px 18px 0 rgba(72,89,102,.25);
+    border-radius: 10px;
+}
