@@ -77,10 +77,11 @@ ul {
     text-align: center;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 -2px 18px 0 rgba(72,89,102,.25);
+    box-shadow: 0 -2px 18px 0 rgba(124,123,128,.25);
     border-radius: 10px;
+    padding: 10px;
     height: 25vh;
-    width: 23%;
+    width: 21%;
     margin: 1%;
     /* kod sprzed flex-boxa:
     float: left;
@@ -96,6 +97,10 @@ ul {
 .function > .icon {
     margin: 1% auto; /*auto: ten zapis wyśrodkował obrazki w elemencie, patrz
     http://www.creamsoft.com/blog/jak-wysrodkowac-element-na-stronie-www-za-pomoca-css-odpowiedz-na-wszystkie-pytania.html*/
+}
+
+.icon > img {
+    width: 100%;
 }
 
 #freepik {
