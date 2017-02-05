@@ -109,3 +109,18 @@ ul {
     font-size: smaller;
     text-align: center;
 }
+
+.team
+
+
+ #member
+
+{
+    display: flex;
+    flex-direction: row;
+    text-align: start;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+}
+
