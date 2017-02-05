@@ -13,7 +13,7 @@ body {
 
 /*style dla header*/
 header {
-    background: url("images/header-photo.jpg") no-repeat center center;
+    background: url("../images/header-photo.jpg") no-repeat center center;
     background-size: cover;
     height: 80vh;
     color: #ffffff;
