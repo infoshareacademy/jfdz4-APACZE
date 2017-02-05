@@ -113,5 +113,14 @@ fieldset{
 }
 .input_button{
     width: 8%;
+    background: #7c7b80;
 
+}
+.input_button:hover {
+    background: #6f6f73;
+
+}
+.input_button:active{
+    border-color: black;
+    font-weight: bold;
 }
