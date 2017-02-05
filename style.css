@@ -95,14 +95,6 @@ fieldset{
     margin-left: auto;
     margin-right: auto;
 }
-.input_email{
-    width: 30%;
-
-}
-.input_button{
-    width: 8%;
-
-}
 
 .email-contener{
 
@@ -113,4 +105,13 @@ fieldset{
     text-align: center;
     box-shadow: 0 -2px 18px 0 rgba(72,89,102,.25);
     border-radius: 10px;
+}
+.input_email{
+    width: 30%;
+
+
+}
+.input_button{
+    width: 8%;
+
 }
