@@ -124,3 +124,7 @@ fieldset{
     border-color: black;
     font-weight: bold;
 }
+.input_email:active, .input_email:hover{
+    border-color: black;
+
+}
