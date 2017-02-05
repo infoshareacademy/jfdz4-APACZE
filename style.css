@@ -96,10 +96,10 @@ fieldset{
     margin-right: auto;
 }
 .input_email{
-    width: 50%;
+    width: 40%;
 
 }
-.input_submit{
+.input_button{
     width: 10%;
 
 }
