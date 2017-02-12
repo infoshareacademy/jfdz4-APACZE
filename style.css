@@ -110,17 +110,34 @@ ul {
     text-align: center;
 }
 
-.team{diplay: flex;}
-
-
- #member
-
-{
-    display: flex;
-    flex-direction: row;
-    text-align: start;
-    align-items: center;
-    justify-content: space-between;
-    width: 20%;
+#team {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+justify-content: space-between;
 }
+.member {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 -2px 18px 0 rgba(124,123,128,.25);
+    border-radius: 10px;
+    padding: 10px;
+    height: 25vh;
+    width: 21%;
+    margin: 1%;}
+
+.zdjęcie {
+    width: 24%;
+    height: 15vh;
+}
+
+.member > .zdjęcie {
+    margin: 1% auto;}
+
+.zdjęcie > img {
+width:100%}
+
 
