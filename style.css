@@ -126,7 +126,7 @@ ul {
     box-shadow: 0 -2px 18px 0 rgba(124,123,128,.25);
     border-radius: 10px;
     padding: 10px;
-    height: 25vh;
+    height: 35vh;
     width: 20%;
     margin-left: 1%;
 }
@@ -134,6 +134,8 @@ ul {
 .zdjęcie {
     width: 35%;
     height: 15vh;
+    box-shadow: 0 -2px 18px 0 rgba(124,123,128,.25);
+    border-radius: 10px;
 }
 
 .member > .zdjęcie {
@@ -145,4 +147,41 @@ width:100%}
 
 
 .podpis {color:#B54328;
-   font-weight:bold;}
+   font-weight:bold;
+
+}
+
+.ikonadom {width:15%;
+    height: 5vh;
+    margin-right: 5%;
+    margin-top:2%;
+ }
+.member > .ikonadom {
+    margin: 1% auto;}
+
+.ikonadom > img {
+    border-radius: 10px;
+    width:100%;}
+
+.ikonasocial {width:15%;
+    height: 5vh;
+    margin-top: 2%;
+}
+.member > .ikonasocial {
+    margin: 1% auto;}
+
+.ikonasocial > img {
+    border-radius: 10px;
+    width:100%}
+
+.linki {display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;}
+
+#zespół {background-color: #7C7B80;
+    text-justify: ;
+    box-shadow: 0 -2px 18px 0 rgba(124,123,128,.25);
+    border-radius: 30px;
+text-align: center;}
