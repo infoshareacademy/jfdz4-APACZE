@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, sans-serif;
+}
+div, h2, img, p {
+    margin: 0;
+}
+
+p {
+    padding: 16px;
+}
+
+nav {
+    color: #ffffff;
+}
+
+li {
+    display: inline;
+    margin: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    color: #ff7f50;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+p a {
+    color: #000000;
+}
+
+header {
+    background-image: url("images/header-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 80vh;
+}
+
+.motto {
+    color: #ffffff;
+    margin: 40px 0px 0px 30px;
+}
+
+.all {
+    margin: auto;
+    max-width: 1000px;
+    box-sizing: border-box;
+}
+
+.title h2 {
+    text-align: center;
+}
+
+.column {
+    display: inline-block;
+}
+
+.title {
+    background-color: #808080;
+    padding: 20px;
+}
+
+.content {
+    background-color: #ff7f50;
+}
+
+.toolbar {
+    overflow: hidden;
+}
+
+.menu {
+    float: right;
+    margin: 40px 10px;
+}
+
+#me-mini {
+    margin: 30px;
+    max-width: 80px;
+    float: left;
+}
+
+#me {
+    width: 50%;
+    float: left;
+}
+
+.bio {
+    width: 50%;
+    float: left;
+}
+
+#contact .content {
+    text-align: center;
+}
+
+h3 {
+    margin: 20px;
+}
+

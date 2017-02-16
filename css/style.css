@@ -30,10 +30,13 @@ header {
 
 .logo {
     padding: 20px;
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
 }
 
 .menu {
     float: right;
+    font-size: 20px;
 }
 
 li {
@@ -159,7 +162,7 @@ width:100%}
 .member > .ikonadom {
     margin: 1% auto;}
 
-.ikonadom > img {
+.ikonadom  img {
     border-radius: 10px;
     width:100%;}
 
@@ -170,7 +173,7 @@ width:100%}
 .member > .ikonasocial {
     margin: 1% auto;}
 
-.ikonasocial > img {
+.ikonasocial  img {
     border-radius: 10px;
     width:100%}
 
