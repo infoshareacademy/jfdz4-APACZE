@@ -58,11 +58,12 @@
         <form class="email-contener">
             <h3>Po zapisaniu się otrzymasz od nas jednego e-maila z informacją o premierze</h3>
 
-            <input class="input_email" type="email" placeholder="Enter your email">
-            <button class="input_button" name="button" disabled="disabled">SEND</button>
-            <input type="checkbox" value="zgoda" title="Type search term here" onclick="this.form.elements['button'].disabled = !this.checked">Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o
-            ochronie danych osobowych w związku z ( np. realizacją zgłoszenia). Podanie danych jest dobrowolne,
-            ale niezbędne do przetworzenia zapytania.
+            <div class="email_button"><input class="input_email" type="email" placeholder="Wprowadź swój email">
+            <button class="input_button" name="button" disabled="disabled">Wyślij</button></div>
+            <input class="input_checkbox" type="checkbox" value="zgoda" title="" onclick="this.form.elements['button'].disabled = !this.checked">
+            <p class="text_zgoda">Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o
+            ochronie danych osobowych w związku z zapisem na premiere. Podanie danych jest dobrowolne,
+                ale niezbędne do przetworzenia zapisu.</p>
 
         </form>
     </section>

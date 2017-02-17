@@ -111,6 +111,13 @@ fieldset{
 
 
 }
+.input_checkbox{
+    width: 2%;
+}
+.text_zgoda{
+    display: inline;
+
+}
 .input_button{
     width: 8%;
     background: #aaa9b0;
@@ -119,6 +126,9 @@ fieldset{
 .input_button:hover {
     background: #6f6f73;
 
+}
+.email_button{
+    margin-bottom: 1%;
 }
 .input_button:active{
     border-color: black;
