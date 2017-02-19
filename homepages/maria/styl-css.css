@@ -1,0 +1,144 @@
+.all {
+    margin: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #dddddd;
+    margin: 2% 5%;
+    padding: 0;
+    border: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+
+    background-size: cover;
+
+    color: #ffffff;
+    text-shadow: 0 0 10px #000000;
+}
+
+.zdjęcietop img {
+    width: 100%;
+}
+
+.motto {
+    padding: 60px 40px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+div .zdjęcietop img {
+    position: relative;
+}
+
+.motto {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 2%;
+    background-color: rgba(88, 88, 88, 0.60);
+    border-radius: 10px;
+
+}
+
+.toolbar {
+    overflow: hidden;
+    color: #ffffff;
+    text-transform: uppercase;
+
+}
+
+.logo, .menu {
+    float: left;
+
+}
+
+.logo {
+    padding: 30px;
+    font-weight: bold;
+    font-size: 25px;
+    border: #585858;
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    right: 2%;
+}
+
+.menu {
+    float: right;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+}
+
+ul {
+    padding: 20px;
+    margin: 0;
+}
+
+.toolbar a, h1, h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.toolbar a, h1 {
+    background-color: rgba(88, 88, 88, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.główna {
+    height: 80vh;
+    padding-bottom: 10px;
+}
+
+.profilowe img {
+    width: 20%;
+    box-shadow: 0 0 10px #000000;
+}
+
+.Omnie {
+    background-color: rgba(88, 88, 88, 0.60);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.Edukacja {
+    background-color: rgba(88, 88, 88, 0.60);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.Projekty {
+    background-color: rgba(88, 88, 88, 0.60);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+footer {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    line-height: 40px;
+
+}
+
+a:link {
+    color: #ffffff
+}
+
+a:visited {
+    color: #ffffff;
+}
