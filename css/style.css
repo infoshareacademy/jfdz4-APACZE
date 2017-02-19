@@ -137,8 +137,11 @@ ul {
 .zdjęcie {
     width: 35%;
     height: 15vh;
-    box-shadow: 0 -2px 18px 0 rgba(124,123,128,.25);
     border-radius: 10px;
+}
+
+.zdjęcie img {
+    box-shadow: 0 -2px 18px 0 rgba(124,123,128,.25);
 }
 
 .member > .zdjęcie {
