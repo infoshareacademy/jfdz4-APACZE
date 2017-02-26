@@ -205,28 +205,21 @@ margin: 1%}
     padding-bottom: 1%;
 
 }
-.emailintro {color: #B54328
+.emailintro {color: #B54328;
+    padding: 0;
+    margin: 0;
    }
 
-.input_email{
-    width: 30%;
-
-}
-.input_checkbox{
-    width: 2%;
-}
-.text_zgoda{
-    display: inline;
 
 
-}
+
 .zgoda{
-    width: 60%;
+
     margin-left: auto;
     margin-right: auto
 }
 .input_button{
-    width: 8%;
+margin-left: 4px;
     background: #aaa9b0;
 
 }
