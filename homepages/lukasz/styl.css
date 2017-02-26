@@ -1,0 +1,76 @@
+ul {
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+
+li a {
+    display: block;
+    float: left;
+    text-align: center;
+    font-size: 1.2em;
+    width: 130px;
+    text-decoration: none;
+    color: aqua;
+    background-color: blue;
+    padding: 10px 15px;
+    margin: 0 1px 1px 0;
+    border: 1px solid navy;
+    border-radius: 3px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    box-shadow: 0 2px 3px gray;
+    -moz-box-shadow: 0 2px 3px gray;
+    -webkit-box-shadow: 0 2px 3px gray;
+}
+
+li a:hover {
+    color: blue;
+    background: aqua;
+    border: 1px solid blue;
+}
+footer{
+    background-color: cornflowerblue;
+    margin-top: -20px;
+}
+
+
+main{
+    background-color: cornflowerblue;
+
+}
+.foter_zdjecie{
+    width:50px;
+    margin: 6px;
+}
+
+article{
+    text-align: center;
+    min-height: 300px;
+}
+#biografia_zdjecie{
+    height:200px;
+
+}
+header{
+    background-image: url(zdjecia/naglowek.png);
+background-repeat: no-repeat;
+   background-size: 100%;
+}
+#tytul{
+    margin-left:17%;
+
+
+    font-size: 3.5em;
+
+}
+#imie{
+    padding-left: 565px;
+
+
+
+}
+

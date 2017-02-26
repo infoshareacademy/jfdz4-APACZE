@@ -1,0 +1,238 @@
+.all {
+    margin: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*style dla header*/
+header {
+    background: url("../images/header-photo.jpg") no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+    color: #ffffff;
+    text-shadow: 0 0 10px #000000;
+}
+
+.toolbar {
+    overflow: hidden;
+}
+
+.logo, .menu {
+    float: left;
+}
+
+.logo {
+    padding: 20px;
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+}
+
+.menu {
+    float: right;
+    font-size: 20px;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+}
+
+ul {
+    padding: 20px;
+    margin: 0;
+}
+
+.toolbar a, h1, h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.motto {
+    padding: 60px 40px;
+}
+
+.motto a {
+    text-decoration: none;
+    color: #ffffff;
+}
+/*koniec: style dla header*/
+
+#function-short {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.function {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 -2px 18px 0 rgba(124,123,128,.25);
+    border-radius: 10px;
+    padding: 10px;
+    height: 25vh;
+    width: 21%;
+    margin: 1%;
+    /* kod sprzed flex-boxa:
+    float: left;
+    display: inline-block;
+    }*/
+}
+
+.icon {
+    width: 25%;
+    height: 15vh;
+}
+
+.function > .icon {
+    margin: 1% auto; /*auto: ten zapis wyśrodkował obrazki w elemencie, patrz
+    http://www.creamsoft.com/blog/jak-wysrodkowac-element-na-stronie-www-za-pomoca-css-odpowiedz-na-wszystkie-pytania.html*/
+}
+
+.icon > img {
+    width: 100%;
+}
+
+#freepik {
+    float: left;
+    width: 100%;
+    font-size: smaller;
+    text-align: center;
+}
+
+#team {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.member {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 -2px 18px 0 rgba(124,123,128,.25);
+    border-radius: 10px;
+    padding: 10px;
+    height: 35vh;
+    width: 20%;
+    margin-left: 1%;
+}
+
+.zdjęcie {
+    width: 35%;
+    height: 15vh;
+    border-radius: 10px;
+}
+
+.zdjęcie img {
+    box-shadow: 0 -2px 18px 0 rgba(124,123,128,.25);
+}
+
+.member > .zdjęcie {
+    margin: 1% auto;}
+
+.zdjęcie > img {
+    border-radius: 10px;
+width:100%}
+
+
+.podpis {color:#B54328;
+   font-weight:bold;
+
+}
+
+.ikonadom {width:15%;
+    height: 5vh;
+    margin-right: 5%;
+    margin-top:2%;
+ }
+.member > .ikonadom {
+    margin: 1% auto;}
+
+.ikonadom  img {
+    border-radius: 10px;
+    width:100%;}
+
+.ikonasocial {width:15%;
+    height: 5vh;
+    margin-top: 2%;
+}
+.member > .ikonasocial {
+    margin: 1% auto;}
+
+.ikonasocial  img {
+    border-radius: 10px;
+    width:100%}
+
+.linki {display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;}
+
+#zespół {background-color: #7C7B80;
+
+    box-shadow: 0 -2px 18px 0 rgba(124,123,128,.25);
+    border-radius: 30px;
+text-align: center;}
+
+.email-contener{
+    width: 98%;
+    margin: 1%;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0 -2px 18px 0 rgba(72,89,102,.25);
+    border-radius: 10px;
+}
+.input_email{
+    width: 30%;
+
+}
+.input_checkbox{
+    width: 2%;
+}
+.text_zgoda{
+    display: inline;
+
+
+}
+.zgoda{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto
+}
+.input_button{
+    width: 8%;
+    background: #aaa9b0;
+
+}
+.input_button:hover {
+    background: #6f6f73;
+
+}
+.email_button{
+    margin-bottom: 1%;
+}
+.input_button:active{
+    border-color: black;
+    font-weight: bold;
+}
+.input_email:active, .input_email:hover{
+    border-color: black;
+}

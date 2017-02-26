@@ -1,54 +1,165 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <title>Apacze</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+  <meta charset="UTF-8">
+  <title>Apacze</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link rel="stylesheet" href="css/flexboxgrid.min.css" type="text/css"></head>
 <body>
 <div class="all">
-<header id="start">
-<div class="header-container">
-    <div class="toolbar">
+  <header id="start">
+    <div class="header-container">
+      <div class="toolbar">
         <div class="logo">
-
+          <a href="#start">
+            Apacze
+          </a>
         </div>
+
         <div class="menu">
-            <nav> <!--Zasosować linki w menu po id-->
+          <nav>
+            <ul>
+              <li><a href="#function-short">Jak to działa</a></li>
 
-            </nav>
+              <li><a href="#invitation">
+                Subskrybuj</a></li>
+
+              <li><a href="#team">Zespół</a></li>
+            </ul>
+          </nav>
         </div>
+      </div>
+
+      <div class="motto">
+        <h1>Apacze</h1>
+
+        <h2>Rewolucja w komunikacji miejskiej.</h2>
+
+        <h2>Razem z naszą aplikacją poruszanie się
+
+          po mieście będzie znacznie prostsze.</h2>
+
+        <h2><a href="#invitation">Zapisz się na jej premierę</a></h2>
+      </div>
     </div>
-    <div class="motto"> <!-- Hasło i zdjęcie w tle -->
-        <h1></h1>
-        <h2></h2>
-    </div>
-</div>
-</header>
-<main>
+  </header>
+  <main>
     <section id="function-short">
-        <div class="function"></div>
-        <div class="function"></div>
-        <div class="function"></div>
-        <div class="function"></div>
+      <div class="function">
+        <div class="icon"><img src="images/icons/map-spot.svg" alt="mapspot"/></div>
+        <div>Dowiesz się, jak przemieścić się z punktu A do B</div>
+      </div>
+      <div class="function">
+        <div class="icon"><img src="images/icons/bus.svg" alt="bus"></div>
+        <div>Sprawdzisz, gdzie aktualnie znajduje się Twój środek lokomocji</div>
+      </div>
+      <div class="function">
+        <div class="icon"><img src="images/icons/payment-method.svg" alt="payment-method"></div>
+        <div>Powiemy Ci, jak opłacić przejazd</div>
+      </div>
+      <div class="function">
+        <div class="icon"><img src="images/icons/alarm-clock.svg" alt="alarm-clock"></div>
+        <div>Dopilnujemy, abyś nie spóźnił się na odjazd</div>
+      </div>
     </section>
-    <section id="function-full">
-        <div class="description"></div>
-        <div class="description"></div>
-        <div class="description"></div>
-        <div class="description"></div>
+
+    <section id="invitation">
+      <form class="email-contener">
+        <h3>Po zapisaniu się otrzymasz od nas jednego e-maila z informacją o premierze</h3>
+
+        <div class="email_button"><input class="input_email" type="email" placeholder="Wprowadź swój email">
+          <button class="input_button" name="button" disabled="disabled">Wyślij</button>
+        </div>
+        <div class="zgoda"><input class="input_checkbox" type="checkbox" value="zgoda" title=""
+                                  onclick="this.form.elements['button'].disabled = !this.checked">
+          <p class="text_zgoda">Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o
+            ochronie danych osobowych w związku z zapisem na premierę.
+            Podanie danych jest dobrowolne,
+            ale niezbędne do przetworzenia zapisu.</p>
+        </div>
+
+      </form>
+
+
     </section>
+
+    <h2 id="zespół">ZESPÓŁ</h2> <br>
+
     <section id="team">
-        <div class="member"></div>
-        <div class="member"></div>
-        <div class="member"></div>
-        <div class="member"></div>
+
+
+      <div class="member">
+
+        <div class="zdjęcie">
+          <img src="images/Anna-Haberka.jpg" alt="Anna_Haberka"></div>
+
+        <div class="podpis">Anna Haberka</div>
+
+        <div class=linki>
+          <div class="ikonadom"><a href="homepages/aniahb/aniahb.html"><img
+            src="images/icons/ikona_strona_domowa.png"></a>
+
+          </div>
+          <div class="ikonasocial"><img src="images/icons/ikona_facebook.png"></div>
+
+        </div>
+      </div>
+
+      <div class="member">
+        <div class="zdjęcie">
+          <img src="images/Maria-Przybylska.jpg" alt="Maria_Przybylska"></div>
+        <div class="podpis">Maria Przybylska</div>
+        <div class=linki>
+          <div class="ikonadom"><a href="homepages/maria/kod-html.html"><img
+            src="images/icons/ikona_strona_domowa.png"></a>
+          </div>
+          <div class="ikonasocial"><a href="https://pl.linkedin.com/in/maria-przybylska-a4055731"><img
+            src="images/icons/ikona_linkedin.png"></a></div>
+        </div>
+      </div>
+
+      <div class="member">
+        <div class="zdjęcie"><img src="images/Artur-Drawc.JPG" alt="Artur_Drawc"></div>
+
+        <div class="podpis">Artur Drawc</div>
+        <div class=linki>
+          <div class="ikonadom"><a href="homepages/artur/wlasna-strona.html"><img
+            src="images/icons/ikona_strona_domowa.png"></a>
+
+          </div>
+          <div class="ikonasocial"><a
+            href="https://www.linkedin.com/in/artur-drawc-681133135?trk=hp-identity-name"><img
+            src="images/icons/ikona_linkedin.png"></a></div>
+        </div>
+
+      </div>
+      <div class="member">
+        <div class="zdjęcie"><img src="images/Lukasz-Wojcieszonek.jpg" alt="Łukasz_Wojcieszonek"></div>
+
+        <div class="podpis">Łukasz Wojcieszonek</div>
+        <div class=linki>
+          <div class="ikonadom"><a href="homepages/lukasz/index.html"> <img
+            src="images/icons/ikona_strona_domowa.png"></a>
+
+          </div>
+          <div class="ikonasocial"><a
+            href="https://pl.linkedin.com/in/%C5%82ukasz-wojcieszonek-03ab80132"><img
+            src="images/icons/ikona_linkedin.png"></a></div>
+        </div>
+      </div>
     </section>
-</main>
-<footer id="contact">
+  </main>
+  <footer id="contact">
     <div id="social"></div>
     <div id="address"></div>
-</footer>
+    <div id="freepik">Icons made by
+      <a href="http://www.freepik.com" title="Freepik">Freepik</a> from
+      <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by
+      <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0
+        BY</a>
+    </div>
+  </footer>
 </div>
 </body>
 </html>
