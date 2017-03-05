@@ -135,7 +135,7 @@ ul {
 }
 
 .zdjęcie {
-    width: 35%;
+    width: 45%;
     height: 15vh;
     border-radius: 10px;
 }
@@ -144,23 +144,27 @@ ul {
     box-shadow: 0 -2px 18px 0 rgba(124,123,128,.25);
 }
 
-.member > .zdjęcie {
+.member > .zdjęcie .back {
     margin: 1% auto;}
 
 .zdjęcie > img {
     border-radius: 10px;
 width:100%}
+.zdjęcie > .back {
+    border-radius: 10px;
+    width:100%}
 
 
 .podpis {color:#B54328;
    font-weight:bold;
+    margin-top: 2px;
 
 }
 
 .ikonadom {width:15%;
     height: 5vh;
     margin-right: 5%;
-    margin-top:2%;
+    margin-top:3%;
  }
 .member > .ikonadom {
     margin: 1% auto;}
@@ -264,4 +268,10 @@ margin: 1%}
 .zdjęcie:hover > img {
     transform:rotateY(180deg);
     -webkit-transform:rotateY(-180deg);
+}
+.back {
+    background-color: black;
+
+
+
 }
