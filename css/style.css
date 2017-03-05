@@ -244,3 +244,24 @@ margin: 1%}
 .input_email:active, .input_email:hover{
     border-color: black;
 }
+
+/* rotacja zdjęć */
+
+.zdjęcie {
+    perspective:300px;
+    -webkit-perspective:300px
+
+}
+
+.zdjęcie img{
+    transition:1s;
+    -webkit-transition:1s;
+    transform-style:preserve-3d;
+    -webkit-transform-style:preserve-3d;
+
+}
+
+.zdjęcie:hover > img {
+    transform:rotateY(180deg);
+    -webkit-transform:rotateY(-180deg);
+}
