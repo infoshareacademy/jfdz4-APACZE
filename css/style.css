@@ -17,7 +17,6 @@ header {
     background-size: cover;
     height: 80vh;
     color: #ffffff;
-    text-shadow: 0 0 10px #000000;
 }
 
 .toolbar {
@@ -49,7 +48,7 @@ ul {
     margin: 0;
 }
 
-.toolbar a, h1, h2 {
+.toolbar a {
     color: #ffffff;
     text-transform: uppercase;
     font-weight: bold;
@@ -60,10 +59,33 @@ ul {
     padding: 60px 40px;
 }
 
-.motto a {
+.motto a, .motto h2 {
     text-decoration: none;
     color: #ffffff;
+    font-size: 30px;
 }
+
+.motto h2 {
+    padding: 10px;
+}
+
+/*.motto div {*/
+    /*text-align: center;*/
+    /*margin: auto;*/
+/*}*/
+
+.motto-text {
+    width: 520px;
+}
+
+.motto-button {
+    width: 400px;
+}
+
+.motto-text, .motto-button {
+    background: rgba(181, 67, 40, 0.7);
+}
+
 /*koniec: style dla header*/
 
 #function-short {
