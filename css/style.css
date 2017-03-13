@@ -88,6 +88,73 @@ ul {
 
 /*koniec: style dla header*/
 
+/*style dla function*/
+/*nowe:*/
+#functions {
+    background-color: #B54328;
+    color: #ffffff;
+}
+
+.small-title {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*#small-title1::after {*/
+    /*content: 'hi1';*/
+/*}*/
+
+/*#small_title_our_app {*/
+    /*content: 'hi2';*/
+/*} nie było widoczne*/
+
+.small-title_inverted::after {
+    border-color: rgba(34, 13, 36, 0.28);
+}
+
+.small-title::after {
+    content: '';
+    top: 15px;
+    left: 50%;
+    bottom: 0;
+    position: relative;
+    display: inherit;
+    border: 1px solid #808080;
+    width: 100px;
+    transform: translateX(-50%);
+}
+
+.row:after, .row:before {
+    display: table;
+    content: " ";
+}
+
+@media (min-width: 768px) {
+    .function_image {
+        width: 57px;
+        height: 57px;
+        margin: 32px auto;
+    }
+}
+    .function_image {
+        width: 40px;
+        height: 40px;
+        margin-right: 27px;
+    }
+
+
+.function-wrapper {
+    text-align: center;
+}
+
+.function_title {
+    font-size: 18px;
+    color: #fff;
+    /*transition: color .5s ease;*/
+    text-align: center;
+}
+/*stare:*/
 #function-short {
     display: flex;
     flex-direction: row;
@@ -127,6 +194,7 @@ ul {
 .icon > img {
     width: 100%;
 }
+/*koniec Ania*/
 
 #freepik {
     float: left;
