@@ -101,14 +101,6 @@ ul {
     text-align: center;
 }
 
-/*#small-title1::after {*/
-    /*content: 'hi1';*/
-/*}*/
-
-/*#small_title_our_app {*/
-    /*content: 'hi2';*/
-/*} nie było widoczne*/
-
 .small-title_inverted::after {
     border-color: rgba(34, 13, 36, 0.28);
 }
@@ -128,6 +120,10 @@ ul {
 .row:after, .row:before {
     display: table;
     content: " ";
+}
+
+.functions-first-row {
+    display: flex;
 }
 
 @media (min-width: 768px) {
