@@ -11,13 +11,18 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/*style dla header*/
-header {
-    background: url("../images/header-photo.jpg") no-repeat center center;
-    background-size: cover;
-    height: 80vh;
-    color: #ffffff;
+.navbar {
+  margin: 0;
 }
+
+.navbar-default {
+  background-color: #B54328;
+}
+
+.navbar-fixed-top {
+  border: 0;
+}
+
 
 
 
@@ -58,6 +63,16 @@ header {
     /*!*text-decoration: none;*!*/
 /*}*/
 
+/*style dla #start*/
+
+#start {
+  background: url("../images/header-photo.jpg") no-repeat center center;
+  background-size: cover;
+  height: 80vh;
+  color: #ffffff;
+  margin-top: 50px;
+}
+
 .motto {
     padding: 60px 40px;
 }
@@ -89,7 +104,7 @@ header {
     background: rgba(181, 67, 40, 0.7);
 }
 
-/*koniec: style dla header*/
+/*koniec: style dla #start*/
 
 #function-short {
     display: flex;
