@@ -52,6 +52,40 @@ body {
     font-size: 20px;
 }
 
+/*style dla hamburgera*/
+.navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.container-fluid>.navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-toggle {
+    border-width: 2px;
+    margin-top: 13px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .navbar-right li  {
+        border-bottom: 1px solid #ffffff;
+    }
+
+    .navbar-right li:last-child  {
+        border-bottom: 0;
+    }
+    
+}
 
 
 
@@ -98,7 +132,7 @@ body {
   background-size: cover;
   height: 80vh;
   color: #ffffff;
-  margin-top: 50px;
+  margin-top: 65px;
 }
 
 .motto {
