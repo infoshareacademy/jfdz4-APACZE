@@ -11,18 +11,46 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/*style dla navbar*/
+
 .navbar {
   margin: 0;
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    height: 65px;
 }
 
 .navbar-default {
   background-color: #B54328;
 }
 
+.navbar-default .navbar-brand {
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.navbar-nav>li>a {
+    line-height: 35px;
+}
+
 .navbar-fixed-top {
   border: 0;
 }
 
+.navbar-right {
+    margin: 0;
+}
+
+.navbar-right a {
+    font-size: 20px;
+}
 
 
 
