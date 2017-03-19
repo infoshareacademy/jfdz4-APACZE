@@ -122,9 +122,11 @@ ul {
     content: " ";
 }
 
-.functions-first-row {
-    display: flex;
-}
+/*flex psuje wyświeltanie kolumn bootstrapowi
+przestały się łamać na mniejszych rozdzielczościach*/
+/*.functions-first-row {*/
+    /*display: flex;*/
+/*}*/
 
 @media (min-width: 768px) {
     .function_image {
@@ -132,24 +134,53 @@ ul {
         height: 57px;
         margin: 32px auto;
     }
+
 }
     .function_image {
         width: 60px;
         height: 60px;
+        margin-top: 50px;
+        margin-bottom: 20px;
         margin-right: 27px;
     }
 
-
 .function-wrapper {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .function_title {
     font-size: 18px;
     color: #fff;
-    /*transition: color .5s ease;*/
     text-align: center;
 }
+
+#functions-get-more {
+    text-align: center;
+}
+
+#function-more-button:hover {
+    background-color: #7C7B80;
+}
+
+#function-more-button {
+    background-color: #B54328;
+    color: #fff;
+    display: inline-block;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 13px 15px;
+    margin: 20px;
+    font-size: 1em;
+    font-weight: 600;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+.functions-more {
+    background-color: #7C7B80;
+}
+
 /*stare:*/
 #function-short {
     display: flex;
