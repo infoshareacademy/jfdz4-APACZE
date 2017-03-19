@@ -216,29 +216,26 @@ text-align: center;
 margin: 1%}
 
 .email-contener{
-margin: 1%;
-   /* box-shadow: 0 -2px 18px 10px rgba(124,123,128,.25);
+    padding: 10px;
+    margin: 0 1% 1%;   /* box-shadow: 0 -2px 18px 10px rgba(124,123,128,.25);
    */
     border-radius: 15px;
     background-color: rgba(124,123,128,.25);
-    padding-bottom: 1%;
+
 
 }
+
 .emailintro {color: #B54328;
     padding: 0;
     margin: 0;
+    text-align: center;
    }
-
-
-
-
-.zgoda{
-
-    margin-left: auto;
-    margin-right: auto
+p.text_zgoda{
+text-align: center;
 }
+
 .input_button{
-margin-left: 4px;
+    margin-left: 2px;
     background: #aaa9b0;
 
 }
@@ -246,13 +243,14 @@ margin-left: 4px;
     background: #6f6f73;
 
 }
-.email_button{
-    margin-bottom: 1%;
-}
+
 .input_button:active{
     border-color: black;
     font-weight: bold;
 }
 .input_email:active, .input_email:hover{
     border-color: black;
+}
+.email_button{
+    padding: 1% 0;
 }
