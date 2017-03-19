@@ -177,6 +177,11 @@ przestały się łamać na mniejszych rozdzielczościach*/
     transition-duration: 0.5s;
 }
 
+.functions-first-more, .functions-more {
+    /*elementy domyślnie niewidoczne, pokazują się po wykonaniu akcji*/
+    display: none;
+}
+
 .functions-more {
     background-color: #7C7B80;
 }
