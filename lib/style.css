@@ -172,6 +172,7 @@ przestały się łamać na mniejszych rozdzielczościach*/
     padding: 13px 15px;
     margin: 20px;
     font-size: 1em;
+    width: 160px;
     font-weight: 600;
     transition-property: background-color;
     transition-duration: 0.5s;
@@ -183,11 +184,25 @@ przestały się łamać na mniejszych rozdzielczościach*/
 }
 
 .functions-more {
+    background-color: #B54328;
+}
+
+.func-more {
+    padding: 30px;
+}
+
+.functions-second-more {
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.function-second {
     background-color: #7C7B80;
 }
 
 /*stare:*/
-#function-short {
+#functions-short {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

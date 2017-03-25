@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Apacze</title>
-  <link rel="stylesheet" href="lib/bootstrap.min.css">
-  <link rel="stylesheet" href="lib/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-  <script src="lib/jquery-3.2.0.min.js"></script>
-  </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Apacze</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <script src="lib/jquery-3.2.0.min.js"></script>
+    <script src="lib/script.js"></script>
+</head>
 <body>
 <div class="all">
   <header id="start">
@@ -23,7 +24,7 @@
         <div class="menu">
           <nav>
             <ul>
-              <li><a href="#function-short">Jak to działa</a></li>
+              <li><a href="#functions">Jak to działa</a></li>
 
               <li><a href="#invitation">
                 Subskrybuj</a></li>
@@ -43,133 +44,125 @@
   </header>
   <main>
 
-    <section class="function2" id="functions">
-      <div class="container">
-        <h1 class="small-title small-title-inverted" id="small-title1">
-          <span id="small_title_our_app">
-            Razem z naszą aplikacją poruszanie się po mieście będzie znacznie prostsze
-          </span>
-        </h1>
+      <section class="functions" id="functions">
+          <div class="container">
+              <h1 class="small-title small-title-inverted" id="small-title1">
+                  <span id="small_title_our_app">
+                    Razem z naszą aplikacją poruszanie się po mieście będzie znacznie prostsze
+                  </span>
+              </h1>
 
-        <div class="row functions-first-row">
+              <div class="row functions-first-row">
 
-          <div class="col-xs-12 col-sm-3">
-            <div class="function-wrapper">
-              <img src="images/icons/white-map-spot.svg" class="function_image" alt="mapspot"/>
-              <div class="function_title">Dowiesz się, jak przemieścić się z punktu A do B</div>
-            </div>
-            <div class="functions-first-more">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet condimentum vehicula.
-                    Nulla a mi erat. Mauris ut ornare risus.</p>
-            </div>
+                  <div class="col-xs-12 col-sm-3">
+                      <div class="function-wrapper">
+                          <img src="images/icons/white-map-spot.svg" class="function_image" alt="mapspot"/>
+                          <div class="function_title">Dowiesz się, jak przemieścić się z punktu A do B</div>
+                      </div>
+                      <div class="functions-first-more">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet condimentum
+                              vehicula.
+                              Nulla a mi erat. Mauris ut ornare risus.</p>
+                      </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-3">
+                      <div class="function-wrapper">
+                          <img src="images/icons/white-bus-stop-pointer.svg" class="function_image" alt="bus">
+                          <div class="function_title">Sprawdzisz, gdzie aktualnie znajduje się Twój środek lokomocji
+                          </div>
+                      </div>
+                      <div class="functions-first-more">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet condimentum
+                              vehicula.
+                              Nulla a mi erat. Mauris ut ornare risus.</p>
+                      </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-3">
+                      <div class="function-wrapper">
+                          <img src="images/icons/white-payment-method.svg" class="function_image" alt="payment-method">
+                          <div class="function_title">Powiemy Ci, jak opłacić przejazd</div>
+                      </div>
+                      <div class="functions-first-more">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet condimentum
+                              vehicula.
+                              Nulla a mi erat. Mauris ut ornare risus.</p>
+                      </div>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-3">
+                      <div class="function-wrapper">
+                          <img src="images/icons/white-alarm-clock.svg" class="function_image" alt="alarm-clock">
+                          <div class="function_title">Dopilnujemy, abyś nie spóźnił się na odjazd</div>
+                      </div>
+                      <div class="functions-first-more">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet condimentum
+                              vehicula.
+                              Nulla a mi erat. Mauris ut ornare risus.</p>
+                      </div>
+                  </div>
+              </div>
+
           </div>
+      </section>
+      <div class="row" id="functions-get-more">
+          <div class="col-xs-12 text-center">
+              <span class="btn" id="function-more-button">Dowiedz się więcej</span>
+          </div>
+      </div>
 
-          <div class="col-xs-12 col-sm-3">
-            <div class="function-wrapper">
-              <img src="images/icons/white-bus-stop-pointer.svg" class="function_image" alt="bus">
-              <div class="function_title">Sprawdzisz, gdzie aktualnie znajduje się Twój środek lokomocji</div>
-            </div>
-              <div class="functions-first-more">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet condimentum vehicula.
-                      Nulla a mi erat. Mauris ut ornare risus.</p>
+      <section class="functions-more" >
+          <div class="row">
+              <div class="col-xs-12 col-sm-6 func-more">
+                  <div class="text-center function-second">
+                      <div class="function-wrapper">
+                          <img src="images/icons/white-push-pin-guide.svg" class="function_image" alt="payment-method">
+                          <div class="function_title">Rozkłady jazdy online</div>
+                      </div>
+                      <div class="functions-second-more">
+                          <p>Nasza aplikacja pokaże aktualny rozkład jazdy z uwzględnieniem opóźnień</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 func-more">
+                  <div class="text-center function-second">
+                      <div class="function-wrapper">
+                          <img src="images/icons/white-bus-online.svg" class="function_image" alt="payment-method">
+                          <div class="function_title">Trasy między przystankami</div>
+                      </div>
+                      <div class="functions-second-more">
+                          <p>Pokażemy ci, jakimi trasami zostaniesz przewieziony</p>
+                      </div>
+                  </div>
               </div>
           </div>
-
-          <div class="col-xs-12 col-sm-3">
-            <div class="function-wrapper">
-              <img src="images/icons/white-payment-method.svg" class="function_image" alt="payment-method">
-              <div class="function_title">Powiemy Ci, jak opłacić przejazd</div>
-            </div>
-              <div class="functions-first-more">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet condimentum vehicula.
-                      Nulla a mi erat. Mauris ut ornare risus.</p>
+          <div class="row">
+              <div class="col-xs-12 col-sm-6 func-more">
+                  <div class="text-center function-second">
+                      <div class="function-wrapper">
+                          <img src="images/icons/white-crossing.svg" class="function_image" alt="payment-method">
+                          <div class="function_title">Jak dojść do przystanku</div>
+                      </div>
+                      <div class="functions-second-more">
+                          <p>Zostaniesz "za rączkę" poprowadzony do przystanku, który wybrałeś</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 func-more">
+                  <div class="text-center function-second">
+                      <div class="function-wrapper">
+                          <img src="images/icons/white-electronic-comerce.svg" class="function_image" alt="payment-method">
+                          <div class="function_title">Integracja z systemem płatności</div>
+                      </div>
+                      <div class="functions-second-more">
+                          <p>Szybko i wygodnie zapłacisz za podróż przy pomocy telefonu</p>
+                      </div>
+                  </div>
               </div>
           </div>
+      </section>
 
-          <div class="col-xs-12 col-sm-3">
-            <div class="function-wrapper">
-              <img src="images/icons/white-alarm-clock.svg" class="function_image" alt="alarm-clock">
-              <div class="function_title">Dopilnujemy, abyś nie spóźnił się na odjazd</div>
-            </div>
-              <div class="functions-first-more">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet condimentum vehicula.
-                      Nulla a mi erat. Mauris ut ornare risus.</p>
-              </div>
-          </div>
-        </div>
-      </div>
-    </section>
-<div class="row" id="functions-get-more">
-  <div class="col-xs-12 text-center">
-      <span class="btn" id="function-more-button">Dowiedz się więcej</span>
-  </div>
-</div>
-
-<section class="functions-more">
-    <div class="row">
-        <div class="col-xs-12 col-sm-6">
-            <div class="function-wrapper">
-                <img src="images/icons/white-payment-method.svg" class="function_image" alt="payment-method">
-                <div class="function_title">Powiemy Ci, jak opłacić przejazd</div>
-            </div>
-            <div class="functions-second-more">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet condimentum vehicula.
-                    Nulla a mi erat. Mauris ut ornare risus.</p>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-            <div class="function-wrapper">
-                <img src="images/icons/white-payment-method.svg" class="function_image" alt="payment-method">
-                <div class="function_title">Powiemy Ci, jak opłacić przejazd</div>
-            </div>
-            <div class="functions-second-more">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet condimentum vehicula.
-                    Nulla a mi erat. Mauris ut ornare risus.</p>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-6">
-            <div class="function-wrapper">
-                <img src="images/icons/white-payment-method.svg" class="function_image" alt="payment-method">
-                <div class="function_title">Powiemy Ci, jak opłacić przejazd</div>
-            </div>
-            <div class="functions-second-more">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet condimentum vehicula.
-                    Nulla a mi erat. Mauris ut ornare risus.</p>
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-            <div class="function-wrapper">
-                <img src="images/icons/white-payment-method.svg" class="function_image" alt="payment-method">
-                <div class="function_title">Powiemy Ci, jak opłacić przejazd</div>
-            </div>
-            <div class="functions-second-more">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam laoreet condimentum vehicula.
-                    Nulla a mi erat. Mauris ut ornare risus.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-    <!--section id="function-short">
-      <div class="function">
-        <div class="icon"><img src="images/icons/map-spot.svg" alt="mapspot"/></div>
-        <div>Dowiesz się, jak przemieścić się z punktu A do B</div>
-      </div>
-      <div class="function">
-        <div class="icon"><img src="images/icons/bus.svg" alt="bus"></div>
-        <div>Sprawdzisz, gdzie aktualnie znajduje się Twój środek lokomocji</div>
-      </div>
-      <div class="function">
-        <div class="icon"><img src="images/icons/payment-method.svg" alt="payment-method"></div>
-        <div>Powiemy Ci, jak opłacić przejazd</div>
-      </div>
-      <div class="function">
-        <div class="icon"><img src="images/icons/alarm-clock.svg" alt="alarm-clock"></div>
-        <div>Dopilnujemy, abyś nie spóźnił się na odjazd</div>
-      </div>
-    </section-->
 
     <section id="invitation">
       <form class="email-contener">
@@ -268,5 +261,6 @@
     </div>
   </footer>
 </div>
+
 </body>
 </html>
