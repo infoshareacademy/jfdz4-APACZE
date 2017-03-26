@@ -94,51 +94,10 @@ body {
     .navbar-right li  {
         border-bottom: 1px solid #ffffff;
     }
-
     .navbar-right li:last-child  {
         border-bottom: 0;
     }
-    
 }
-
-
-
-
-/*.toolbar {*/
-    /*overflow: hidden;*/
-/*}*/
-
-/*.logo, .menu {*/
-    /*float: left;*/
-/*}*/
-
-/*.logo {*/
-    /*padding: 20px;*/
-    /*font-family: 'Pacifico', cursive;*/
-    /*font-size: 40px;*/
-/*}*/
-
-/*.menu {*/
-    /*float: right;*/
-    /*font-size: 20px;*/
-/*}*/
-
-/*li {*/
-    /*display: inline;*/
-    /*padding: 10px;*/
-/*}*/
-
-/*ul {*/
-    /*padding: 20px;*/
-    /*margin: 0;*/
-/*}*/
-
-/*.toolbar a {*/
-    /*color: #ffffff;*/
-    /*text-transform: uppercase;*/
-    /*!*font-weight: bold;*!*/
-    /*!*text-decoration: none;*!*/
-/*}*/
 
 /*style dla #start*/
 
