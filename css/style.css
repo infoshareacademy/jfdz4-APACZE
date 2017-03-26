@@ -36,6 +36,11 @@ body {
     text-transform: uppercase;
 }
 
+.navbar-default .navbar-nav>li>a:hover {
+    color: #B54328;
+    background: #ffffff;
+}
+
 .navbar-nav>li>a {
     line-height: 35px;
 }
@@ -65,6 +70,10 @@ body {
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
     background-color: transparent;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: #ffffff;
 }
 
 .navbar-toggle {
