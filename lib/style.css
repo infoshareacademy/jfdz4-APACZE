@@ -141,7 +141,8 @@ przestały się łamać na mniejszych rozdzielczościach*/
     height: 60px;
     margin-top: 30px;
     margin-bottom: 20px;
-    margin-right: 27px;
+    /*wykomentowny margin-right, bo ikonki nie były wycentrowane*/
+    /*margin-right: 27px;*/
 }
 
 .function-wrapper {
@@ -157,7 +158,19 @@ przestały się łamać na mniejszych rozdzielczościach*/
 
 #functions-get-more {
     text-align: center;
+    /*dodane style*/
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
+
+/*dodane style*/
+#functions-get-more .row {
+    margin: 0;
+    width: 100%;
+}
+
 
 #function-more-button:hover {
     background-color: #7C7B80;
@@ -178,21 +191,33 @@ przestały się łamać na mniejszych rozdzielczościach*/
     transition-duration: 0.5s;
 }
 
-.functions-first-more, .functions-more {
+/*zmiana styli z class na id*/
+/*.functions-first-more, .functions-more {*/
+    /*!*elementy domyślnie niewidoczne, pokazują się po kliknięciu*/
+    /*w "dowiedz się więcej*!*/
+    /*display: none;*/
+/*}*/
+.functions-first-more, #functions-more {
     /*elementy domyślnie niewidoczne, pokazują się po kliknięciu
     w "dowiedz się więcej*/
     display: none;
 }
 
-.functions-more {
-    background-color: #B54328;
+/*zmiana styli z class na id*/
+/*.functions-more {*/
+    /*background-color: #B54328;*/
+/*}*/
+#functions-more {
+  background-color: #B54328;
 }
 
 
 @media (min-width: 768px) {
     .func-more {
         padding-top: 60px;
-        padding-left: 60px;
+      /*zmiana padding-left na 15px*/
+        /*padding-left: 60px;*/
+      padding-left: 15px;
     }
 
     #func-more-3, #func-more-4 {
