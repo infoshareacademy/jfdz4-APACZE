@@ -11,48 +11,102 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/*style dla header*/
-header {
-    background: url("../images/header-photo.jpg") no-repeat center center;
-    background-size: cover;
-    height: 80vh;
+/*style dla navbar*/
+
+.navbar-default .navbar-nav>li>a.active {
+    color: #B54328;
+    background: #ffffff;
+}
+
+.navbar {
+  margin: 0;
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 40px;
+    height: 65px;
+}
+
+.navbar-default {
+  background-color: #B54328;
+}
+
+.navbar-default .navbar-brand {
     color: #ffffff;
 }
 
-.toolbar {
-    overflow: hidden;
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+    text-transform: uppercase;
 }
 
-.logo, .menu {
-    float: left;
+.navbar-default .navbar-nav>li>a:hover {
+    color: #B54328;
+    background: #ffffff;
 }
 
-.logo {
-    padding: 20px;
-    font-family: 'Pacifico', cursive;
-    font-size: 40px;
+.navbar-nav>li>a {
+    line-height: 35px;
 }
 
-.menu {
-    float: right;
-    font-size: 20px;
+.navbar-fixed-top {
+  border: 0;
 }
 
-li {
-    display: inline;
-    padding: 10px;
-}
-
-ul {
-    padding: 20px;
+.navbar-right {
     margin: 0;
 }
 
-.toolbar a {
+.navbar-right a {
+    font-size: 20px;
+}
+
+/*style dla hamburgera*/
+.navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.container-fluid>.navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
     color: #ffffff;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
+}
+
+.navbar-toggle {
+    border-width: 2px;
+    margin-top: 13px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+}
+
+@media (max-width: 767px) {
+    .navbar-right li  {
+        border-bottom: 1px solid #ffffff;
+    }
+    .navbar-right li:last-child  {
+        border-bottom: 0;
+    }
+}
+
+/*style dla #start*/
+
+#start {
+  background: url("../images/header-photo.jpg") no-repeat center center;
+  background-size: cover;
+  height: 80vh;
+  color: #ffffff;
+  margin-top: 65px;
 }
 
 .motto {
@@ -86,7 +140,7 @@ ul {
     background: rgba(181, 67, 40, 0.7);
 }
 
-/*koniec: style dla header*/
+/*koniec: style dla #start*/
 
 /*style dla function*/
 #functions {
