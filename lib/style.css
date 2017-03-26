@@ -13,6 +13,11 @@ body {
 
 /*style dla navbar*/
 
+.navbar-default .navbar-nav>li>a.active {
+    color: #B54328;
+    background: #ffffff;
+}
+
 .navbar {
   margin: 0;
 }
@@ -95,6 +100,7 @@ body {
     }
     
 }
+
 
 
 
