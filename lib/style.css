@@ -91,12 +91,13 @@ body {
 }
 
 @media (max-width: 767px) {
-    .navbar-right li  {
-        border-bottom: 1px solid #ffffff;
-    }
-    .navbar-right li:last-child  {
-        border-bottom: 0;
-    }
+  .navbar-right li {
+    border-bottom: 1px solid #ffffff;
+  }
+
+  ul .navbar-right {
+    border-bottom: 1px solid #ffffff;
+  }
 }
 
 /*style dla #start*/
