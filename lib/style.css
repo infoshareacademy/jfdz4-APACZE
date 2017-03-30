@@ -41,7 +41,8 @@ body {
     text-transform: uppercase;
 }
 
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
     color: #B54328;
     background: #ffffff;
 }
