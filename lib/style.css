@@ -19,7 +19,7 @@ body {
 }
 
 .navbar {
-  margin: 0;
+    margin: 0;
 }
 
 .navbar-brand {
@@ -29,7 +29,7 @@ body {
 }
 
 .navbar-default {
-  background-color: #B54328;
+    background-color: #B54328;
 }
 
 .navbar-default .navbar-brand {
@@ -41,8 +41,7 @@ body {
     text-transform: uppercase;
 }
 
-.navbar-default .navbar-nav>li>a:hover,
-.navbar-default .navbar-nav>li>a:focus {
+.navbar-default .navbar-nav>li>a:hover {
     color: #B54328;
     background: #ffffff;
 }
@@ -52,7 +51,7 @@ body {
 }
 
 .navbar-fixed-top {
-  border: 0;
+    border: 0;
 }
 
 .navbar-right {
@@ -92,22 +91,23 @@ body {
 }
 
 @media (max-width: 767px) {
-    .navbar-right li  {
+    .navbar-right li {
         border-bottom: 1px solid #ffffff;
     }
-    .navbar-right li:last-child  {
-        border-bottom: 0;
+
+    ul .navbar-right {
+        border-bottom: 1px solid #ffffff;
     }
 }
 
 /*style dla #start*/
 
 #start {
-  background: url("../images/header-photo.jpg") no-repeat center center;
-  background-size: cover;
-  height: 80vh;
-  color: #ffffff;
-  margin-top: 65px;
+    background: url("../images/header-photo.jpg") no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+    color: #ffffff;
+    margin-top: 65px;
 }
 
 .motto {
@@ -125,8 +125,8 @@ body {
 }
 
 /*.motto div {*/
-    /*text-align: center;*/
-    /*margin: auto;*/
+/*text-align: center;*/
+/*margin: auto;*/
 /*}*/
 
 .motto-text {
@@ -143,45 +143,169 @@ body {
 
 /*koniec: style dla #start*/
 
-#function-short {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
+/*style dla function*/
+#functions {
+    background-color: #B54328;
+    color: #ffffff;
 }
 
-.function {
-    display: flex;
-    flex-direction: column;
+.small-title {
+    font-size: 14px;
+    text-transform: uppercase;
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 -2px 18px 0 rgba(124,123,128,.25);
-    border-radius: 10px;
-    padding: 10px;
-    height: 25vh;
-    width: 21%;
-    margin: 1%;
-    /* kod sprzed flex-boxa:
-    float: left;
-    display: inline-block;
-    }*/
 }
 
-.icon {
-    width: 25%;
-    height: 15vh;
+.small-title_inverted::after {
+    border-color: rgba(34, 13, 36, 0.28);
 }
 
-.function > .icon {
-    margin: 1% auto; /*auto: ten zapis wyśrodkował obrazki w elemencie, patrz
-    http://www.creamsoft.com/blog/jak-wysrodkowac-element-na-stronie-www-za-pomoca-css-odpowiedz-na-wszystkie-pytania.html*/
+.small-title::after {
+    content: '';
+    top: 15px;
+    left: 50%;
+    bottom: 0;
+    position: relative;
+    display: inherit;
+    border: 1px solid #808080;
+    width: 100px;
+    transform: translateX(-50%);
 }
 
-.icon > img {
+.row:after, .row:before {
+    display: table;
+    content: " ";
+}
+
+/*flex psuje wyświeltanie kolumn bootstrapowi
+przestały się łamać na mniejszych rozdzielczościach*/
+/*.functions-first-row {*/
+/*display: flex;*/
+/*}*/
+
+@media (min-width: 768px) {
+    .function_image {
+        width: 57px;
+        height: 57px;
+        margin: 32px auto;
+    }
+
+}
+
+.function_image {
+    width: 60px;
+    height: 60px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    /*wykomentowny margin-right, bo ikonki nie były wycentrowane*/
+    /*margin-right: 27px;*/
+}
+
+.function-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.function_title {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+
+#functions-get-more {
+    text-align: center;
+    /*dodane style*/
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
     width: 100%;
 }
+
+/*dodane style*/
+#functions-get-more .row {
+    margin: 0;
+    width: 100%;
+}
+
+
+#function-more-button:hover {
+    background-color: #7C7B80;
+}
+
+#function-more-button {
+    background-color: #B54328;
+    color: #fff;
+    display: inline-block;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 13px 15px;
+    margin: 20px;
+    font-size: 1em;
+    width: 160px;
+    font-weight: 600;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+/*zmiana styli z class na id*/
+/*.functions-first-more, .functions-more {*/
+/*!*elementy domyślnie niewidoczne, pokazują się po kliknięciu*/
+/*w "dowiedz się więcej*!*/
+/*display: none;*/
+/*}*/
+.functions-first-more, #functions-more {
+    /*elementy domyślnie niewidoczne, pokazują się po kliknięciu
+    w "dowiedz się więcej*/
+    display: none;
+}
+
+/*zmiana styli z class na id*/
+/*.functions-more {*/
+/*background-color: #B54328;*/
+/*}*/
+#functions-more {
+    background-color: #B54328;
+}
+
+
+@media (min-width: 768px) {
+    .func-more {
+        padding-top: 60px;
+        /*zmiana padding-left na 15px*/
+        /*padding-left: 60px;*/
+        padding-left: 15px;
+    }
+
+    #func-more-3, #func-more-4 {
+        padding-bottom: 60px;
+    }
+
+    #func-more-2, #func-more-4 {
+        padding-right: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    .func-more {
+        padding-top: 60px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    #func-more-4 {
+        padding-bottom: 60px;
+    }
+}
+
+.functions-first-more, .functions-second-more {
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.function-second {
+    background-color: #7C7B80;
+}
+
+/*koniec styli dla function*/
 
 #freepik {
     float: left;
@@ -226,11 +350,11 @@ body {
 
 .zdjęcie > img {
     border-radius: 10px;
-width:100%}
+    width:100%}
 
 
 .podpis {color:#B54328;
-   font-weight:bold;
+    font-weight:bold;
 
 }
 
@@ -238,7 +362,7 @@ width:100%}
     height: 5vh;
     margin-right: 5%;
     margin-top:2%;
- }
+}
 .member > .ikonadom {
     margin: 1% auto;}
 
@@ -267,23 +391,23 @@ width:100%}
 
     box-shadow: 0 -2px 18px 0 rgba(124,123,128,.25);
     border-radius: 5px;
-text-align: center;
-margin: 1%}
+    text-align: center;
+    margin: 1%}
 
 .email-contener{
     width: 98%;
     margin: 1%;
     display: inline-block;
     text-align: center;
-   /* box-shadow: 0 -2px 18px 10px rgba(124,123,128,.25);
-   */
+    /* box-shadow: 0 -2px 18px 10px rgba(124,123,128,.25);
+    */
     border-radius: 15px;
     background-color: rgba(124,123,128,.25);
     padding-bottom: 1%;
 
 }
 .emailintro {color: #B54328
-   }
+}
 
 .input_email{
     width: 30%;
