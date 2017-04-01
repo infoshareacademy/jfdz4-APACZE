@@ -2,48 +2,51 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Apacze</title>
   <link rel="stylesheet" href="lib/bootstrap.min.css">
   <link rel="stylesheet" href="lib/style.css">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   <script src="lib/jquery-3.2.0.min.js"></script>
+  <script src="lib/bootstrap.js"></script>
   <script src="lib/script.js"></script>
 </head>
 <body>
-<div class="all">
-  <header id="start">
-    <div class="header-container">
-      <div class="toolbar">
-        <div class="logo">
-          <a href="#start">
-            Apacze
-          </a>
+<div id="body-all" class="all">
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                  data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#body-all">Apacze</a>
         </div>
 
-        <div class="menu">
-          <nav>
-            <ul>
-              <li><a href="#functions">Jak to działa</a></li>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#functions">Jak to działa</a></li>
 
-              <li><a href="#invitation">
-                Subskrybuj</a></li>
+            <li><a href="#invitation">Subskrybuj</a></li>
 
-              <li><a href="#team">Zespół</a></li>
-            </ul>
-          </nav>
+            <li><a href="#team">Zespół</a></li>
+          </ul>
         </div>
       </div>
-
+    </nav>
+  </header>
+  <main>
+    <section id="start">
       <div class="motto">
         <div class="motto-text"><h2>Rewolucja w komunikacji miejskiej</h2></div>
 
         <div class="motto-button"><a href="#invitation"><h2>Zapisz się na jej premierę</h2></a></div>
       </div>
-    </div>
-  </header>
-  <main>
-
+    </section>
     <section class="functions" id="functions">
       <div class="container">
         <h1 class="small-title small-title-inverted" id="small-title1">
@@ -91,6 +94,7 @@
           </div>
         </div>
       </div>
+      <!--przeniesione id="functions-get-more" z row do container-->
       <div class="container" id="functions-get-more">
         <div class="row">
           <div class="col-xs-12 text-center">
@@ -98,6 +102,7 @@
           </div>
         </div>
       </div>
+      <!--przeniesione functions-more i zamiast class jest id-->
       <div class="container" id="functions-more">
         <div class="row">
           <div class="col-xs-12 col-sm-6 func-more" id="func-more-1">

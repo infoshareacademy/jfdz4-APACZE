@@ -11,48 +11,114 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/*style dla header*/
-header {
+/*style dla navbar*/
+
+.navbar-default .navbar-nav > li > a.active {
+  color: #B54328;
+  background: #ffffff;
+}
+
+.navbar {
+  margin: 0;
+}
+
+.navbar-brand {
+  font-family: 'Pacifico', cursive;
+  font-size: 40px;
+  height: 65px;
+}
+
+.navbar-default {
+  background-color: #B54328;
+}
+
+.navbar-default .navbar-brand {
+  color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #B54328;
+  background: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+  background: #B54328;
+  color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a.active {
+  color: #B54328;
+  background: #ffffff;
+}
+
+.navbar-nav > li > a {
+  line-height: 35px;
+}
+
+.navbar-fixed-top {
+  border: 0;
+  border-bottom: 1px solid white;
+}
+
+.navbar-right {
+  margin: 0;
+}
+
+.navbar-right a {
+  font-size: 20px;
+}
+
+/*style dla hamburgera*/
+.navbar-collapse {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.container-fluid > .navbar-collapse {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+  color: #ffffff;
+}
+
+.navbar-toggle {
+  border-width: 2px;
+  margin-top: 13px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .navbar-right li {
+    border-bottom: 1px solid #ffffff;
+  }
+
+  ul .navbar-right {
+    border-bottom: 1px solid #ffffff;
+  }
+}
+
+/*style dla #start*/
+
+#start {
   background: url("../images/header-photo.jpg") no-repeat center center;
   background-size: cover;
   height: 80vh;
   color: #ffffff;
-}
-
-.toolbar {
-  overflow: hidden;
-}
-
-.logo, .menu {
-  float: left;
-}
-
-.logo {
-  padding: 20px;
-  font-family: 'Pacifico', cursive;
-  font-size: 40px;
-}
-
-.menu {
-  float: right;
-  font-size: 20px;
-}
-
-li {
-  display: inline;
-  padding: 10px;
-}
-
-ul {
-  padding: 20px;
-  margin: 0;
-}
-
-.toolbar a {
-  color: #ffffff;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-decoration: none;
+  margin-top: 66px;
 }
 
 .motto {
@@ -86,7 +152,7 @@ ul {
   background: rgba(181, 67, 40, 0.7);
 }
 
-/*koniec: style dla header*/
+/*koniec: style dla #start*/
 
 /*style dla function*/
 #functions {
@@ -141,6 +207,8 @@ przestały się łamać na mniejszych rozdzielczościach*/
   height: 60px;
   margin-top: 30px;
   margin-bottom: 20px;
+  /*wykomentowny margin-right, bo ikonki nie były wycentrowane*/
+  /*margin-right: 27px;*/
 }
 
 .function-wrapper {
@@ -156,12 +224,14 @@ przestały się łamać na mniejszych rozdzielczościach*/
 
 #functions-get-more {
   text-align: center;
+  /*dodane style*/
   background-color: #FFFFFF;
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
+/*dodane style*/
 #functions-get-more .row {
   margin: 0;
   width: 100%;
@@ -186,12 +256,22 @@ przestały się łamać na mniejszych rozdzielczościach*/
   transition-duration: 0.5s;
 }
 
+/*zmiana styli z class na id*/
+/*.functions-first-more, .functions-more {*/
+/*!*elementy domyślnie niewidoczne, pokazują się po kliknięciu*/
+/*w "dowiedz się więcej*!*/
+/*display: none;*/
+/*}*/
 .functions-first-more, #functions-more {
   /*elementy domyślnie niewidoczne, pokazują się po kliknięciu
   w "dowiedz się więcej*/
   display: none;
 }
 
+/*zmiana styli z class na id*/
+/*.functions-more {*/
+/*background-color: #B54328;*/
+/*}*/
 #functions-more {
   background-color: #B54328;
 }
@@ -199,6 +279,8 @@ przestały się łamać na mniejszych rozdzielczościach*/
 @media (min-width: 768px) {
   .func-more {
     padding-top: 60px;
+    /*zmiana padding-left na 15px*/
+    /*padding-left: 60px;*/
     padding-left: 15px;
   }
 
