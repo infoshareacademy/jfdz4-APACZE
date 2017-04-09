@@ -2,60 +2,156 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Apacze</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/bootstrap.min.css">
+  <link rel="stylesheet" href="lib/style.css">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-  </head>
+  <script src="lib/jquery-3.2.0.min.js"></script>
+  <script src="lib/bootstrap.js"></script>
+  <script src="lib/script.js"></script>
+</head>
 <body>
-<div class="all">
-  <header id="start">
-    <div class="header-container">
-      <div class="toolbar">
-        <div class="logo">
-          <a href="#start">
-            Apacze
-          </a>
+<div id="body-all" class="all">
+  <header>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                  data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#body-all">Apacze</a>
         </div>
 
-        <div class="menu">
-          <nav>
-            <ul>
-              <li><a href="#function-short">Jak to działa</a></li>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#functions">Jak to działa</a></li>
 
-              <li><a href="#invitation">
-                Subskrybuj</a></li>
+            <li><a href="#invitation">Subskrybuj</a></li>
 
-              <li><a href="#team">Zespół</a></li>
-            </ul>
-          </nav>
+            <li><a href="#team">Zespół</a></li>
+          </ul>
         </div>
       </div>
-
+    </nav>
+  </header>
+  <main>
+    <section id="start">
       <div class="motto">
         <div class="motto-text"><h2>Rewolucja w komunikacji miejskiej</h2></div>
 
         <div class="motto-button"><a href="#invitation"><h2>Zapisz się na jej premierę</h2></a></div>
       </div>
-    </div>
-  </header>
-  <main>
-    <section id="function-short">
-      <div class="function">
-        <div class="icon"><img src="images/icons/map-spot.svg" alt="mapspot"/></div>
-        <div>Dowiesz się, jak przemieścić się z punktu A do B</div>
+    </section>
+    <section class="functions" id="functions">
+      <div class="container">
+        <h1 class="small-title small-title-inverted" id="small-title1">
+                  <span id="small_title_our_app">
+                    Razem z naszą aplikacją poruszanie się po mieście będzie znacznie prostsze
+                  </span>
+        </h1>
+
+        <div class="row functions-first-row">
+
+          <div class="col-xs-12 col-sm-3">
+            <div class="function-wrapper">
+              <img src="images/icons/white-map-spot.svg" class="function_image" alt="mapspot"/>
+              <div class="function_title function-first-title">Dowiesz się, jak przemieścić się z punktu A do B</div>
+              <div class="functions-first-more">Z naszą aplikacją bez problemu dostaniesz się, gdzie chcesz</div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-3">
+            <div class="function-wrapper">
+              <img src="images/icons/white-bus-stop-pointer.svg" class="function_image" alt="bus">
+              <div class="function_title function-first-title">Sprawdzisz, gdzie aktualnie znajduje się Twój środek
+                lokomocji
+              </div>
+              <div class="functions-first-more">Możesz na bieżąco śledzić przemieszczanie się wybranego środka
+                transportu
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-3">
+            <div class="function-wrapper">
+              <img src="images/icons/white-payment-method.svg" class="function_image" alt="payment-method">
+              <div class="function_title function-first-title">Powiemy Ci, jak opłacić przejazd</div>
+              <div class="functions-first-more">Bez stresu dowiesz się, jak pokryć koszty podróży</div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-3">
+            <div class="function-wrapper">
+              <img src="images/icons/white-alarm-clock.svg" class="function_image" alt="alarm-clock">
+              <div class="function_title function-first-title">Dopilnujemy, abyś nie spóźnił się na odjazd</div>
+              <div class="functions-first-more">Wbudowana funkcja budzika nie pozwoli Ci spóźnić się na odjazd</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="function">
-        <div class="icon"><img src="images/icons/bus.svg" alt="bus"></div>
-        <div>Sprawdzisz, gdzie aktualnie znajduje się Twój środek lokomocji</div>
+      <!--przeniesione id="functions-get-more" z row do container-->
+      <div class="container" id="functions-get-more">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <span class="btn" id="function-more-button">Dowiedz się więcej</span>
+          </div>
+        </div>
       </div>
-      <div class="function">
-        <div class="icon"><img src="images/icons/payment-method.svg" alt="payment-method"></div>
-        <div>Powiemy Ci, jak opłacić przejazd</div>
-      </div>
-      <div class="function">
-        <div class="icon"><img src="images/icons/alarm-clock.svg" alt="alarm-clock"></div>
-        <div>Dopilnujemy, abyś nie spóźnił się na odjazd</div>
+      <!--przeniesione functions-more i zamiast class jest id-->
+      <div class="container" id="functions-more">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 func-more" id="func-more-1">
+            <div class="text-center function-second">
+              <div class="function-wrapper">
+                <img src="images/icons/white-push-pin-guide.svg" class="function_image" alt="payment-method">
+                <div class="function_title">Rozkłady jazdy online</div>
+              </div>
+              <div class="functions-second-more">
+                <p>Nasza aplikacja pokaże aktualny rozkład jazdy z uwzględnieniem opóźnień</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 func-more" id="func-more-2">
+            <div class="text-center function-second">
+              <div class="function-wrapper">
+                <img src="images/icons/white-bus-online.svg" class="function_image" alt="payment-method">
+                <div class="function_title">Trasy między przystankami</div>
+              </div>
+              <div class="functions-second-more">
+                <p>Pokażemy ci, jakimi trasami zostaniesz przewieziony</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 func-more" id="func-more-3">
+            <div class="text-center function-second">
+              <div class="function-wrapper">
+                <img src="images/icons/white-crossing.svg" class="function_image" alt="payment-method">
+                <div class="function_title">Jak dojść do przystanku</div>
+              </div>
+              <div class="functions-second-more">
+                <p>Zostaniesz "za rączkę" poprowadzony do przystanku, który wybrałeś</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 func-more" id="func-more-4">
+            <div class="text-center function-second">
+              <div class="function-wrapper">
+                <img src="images/icons/white-electronic-comerce.svg" class="function_image" alt="payment-method">
+                <div class="function_title">Integracja z systemem płatności</div>
+              </div>
+              <div class="functions-second-more">
+                <p>Szybko i wygodnie zapłacisz za podróż przy pomocy telefonu</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -126,7 +222,7 @@
 
           </div>
           <div class="ikonasocial"><a target="_blank"
-            href="https://www.linkedin.com/in/artur-drawc-681133135?trk=hp-identity-name"><img
+                                      href="https://www.linkedin.com/in/artur-drawc-681133135?trk=hp-identity-name"><img
             src="images/icons/ikona_linkedin.png"></a></div>
         </div>
 
@@ -141,7 +237,7 @@
 
           </div>
           <div class="ikonasocial"><a target="_blank"
-            href="https://pl.linkedin.com/in/%C5%82ukasz-wojcieszonek-03ab80132"><img
+                                      href="https://pl.linkedin.com/in/%C5%82ukasz-wojcieszonek-03ab80132"><img
             src="images/icons/ikona_linkedin.png"></a></div>
         </div>
       </div>
