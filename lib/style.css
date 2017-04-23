@@ -477,6 +477,7 @@ bottom: 1px;
 }
 .empty{
   border:solid 1px #B54328;
+
 }
 .input_email:focus{
   outline: none;
