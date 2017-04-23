@@ -157,7 +157,7 @@
 
     <section id="invitation container">
 
-      <form class="email-contener  ">
+      <form class="email-contener" onsubmit="return sprawdz(adres.value)">
 
 <div class="container emailintro ">
 
@@ -168,15 +168,16 @@
 
         <div class="email_button container">
 
-          <input class="input_email " type="email" placeholder="Wprowadź swój email"/>
-          <button class="input_button " name="button" disabled="disabled">Wyślij</button>
+          <input id="email" class="input_email empty col-xs-offset-3 col-xs-5 " type="text" name="adres" onkeyup="check(this.value)" placeholder="Wprowadź swój email"/>
+
+          <input id="button" type="submit" value="Wyślij" class="input_button col-xs-1 "  />
 
         </div>
 
         <div class="zgoda container">
 
           <div class="col-xs-offset-1 col-xs-1 row">
-            <input  type="checkbox" value="zgoda" title="" onclick="this.form.elements['button'].disabled = !this.checked">
+            <input  type="checkbox" value="zgoda" title="" >
           </div>
 
           <p class="text_zgoda col-xs-9 row">Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o
@@ -269,5 +270,6 @@
     </div>
   </footer>
 </div>
+
 </body>
 </html>
