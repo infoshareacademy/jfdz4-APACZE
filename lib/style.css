@@ -119,7 +119,6 @@ body {
 }
 
 .slideshow-container {
-  display: inline-block;
   position: relative;
 }
 
@@ -128,6 +127,11 @@ body {
   overflow: hidden;
   display: none;
   position: relative;
+}
+
+.slide .img-responsive {
+  height: inherit;
+  max-height: 100%;
 }
 
 .assign-button-wrapper {
