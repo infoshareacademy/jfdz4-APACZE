@@ -113,6 +113,10 @@ body {
 
 /*style dla #start (slide)*/
 
+#start {
+  margin-top: 66px;
+}
+
 #start .container-fluid {
   padding-right: 0;
   padding-left: 0;
@@ -131,7 +135,6 @@ body {
 
 .slide .img-responsive {
   height: inherit;
-  max-height: 100%;
 }
 
 .assign-button-wrapper {
@@ -143,6 +146,8 @@ body {
   width: 400px;
   background: rgba(181, 67, 40, 0.7);
 }
+
+
 
 @media (max-width: 767px) {
   .slide .motto {
@@ -173,18 +178,27 @@ body {
 }
 
 /* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+
+@media (max-width: 500px) {
+  .prev, .next {
+    display: none;
+  }
+}
+
+@media (min-width: 501px) {
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
 }
 
 /* Position the "next button" to the right */
