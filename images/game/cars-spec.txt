@@ -1,0 +1,7 @@
+ambulance: 156 x 76
+bus: 259 x 80
+car1: 176 x 76
+car2: 160 x 76
+car3: 165 x 76
+police: 165 x 76
+taxi: 147 x 76
