@@ -552,3 +552,7 @@ bottom: 1px;
 #game{
   display:none;
 }
+
+canvas {
+  background-image: url("../lib/game/road.png");
+}
