@@ -503,14 +503,7 @@ przestały się łamać na mniejszych rozdzielczościach*/
   color: #B54328
 }
 
-.input_email {
-  width: 30%;
 
-}
-
-.input_checkbox {
-  width: 2%;
-}
 
 .text_zgoda {
   display: inline;
@@ -518,13 +511,13 @@ przestały się łamać na mniejszych rozdzielczościach*/
 }
 
 .zgoda {
-  width: 60%;
+
   margin-left: auto;
   margin-right: auto
 }
 
 .input_button {
-  width: 8%;
+bottom: 1px;
   background: #aaa9b0;
 
 }
@@ -542,7 +535,20 @@ przestały się łamać na mniejszych rozdzielczościach*/
   border-color: black;
   font-weight: bold;
 }
+.ok{
+  border:solid 2px green;
+}
+.bad{
+  border:solid 2px #B54328;
 
-.input_email:active, .input_email:hover {
-  border-color: black;
+}
+.empty{
+  border:solid 1px #B54328;
+
+}
+.input_email:focus{
+  outline: none;
+}
+#game{
+  display:none;
 }
