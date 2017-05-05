@@ -186,7 +186,7 @@
       </div>
     </section>
 
-    <section id="invitation container">
+    <section id="invitation">
 
       <form class="email-contener" onsubmit="return sprawdz(adres.value)">
 
@@ -199,9 +199,9 @@
 
         <div class="email_button container">
 
-          <input id="email" class="input_email empty col-xs-offset-3 col-xs-5 " type="text" name="adres" onkeyup="check(this.value)" placeholder="Wprowadź swój email"/>
+          <input id="email" class="input_email empty col-xs-offset-3 col-xs-5 " type="text" name="adres" onkeydown="check(this.value)" placeholder="Wprowadź swój email"/>
 
-          <input id="button" type="submit" value="Wyślij" class="input_button col-xs-1 "  />
+          <input id="button" type="button" value="Wyślij" class="input_button col-xs-1 "  />
 
         </div>
 
@@ -221,7 +221,7 @@
 
       </form>
 
-
+<div id="game">Pole do gry</div>
     </section>
 
     <h2 id="zespół">ZESPÓŁ</h2> <br>

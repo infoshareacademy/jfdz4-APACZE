@@ -549,3 +549,6 @@ bottom: 1px;
 .input_email:focus{
   outline: none;
 }
+#game{
+  display:none;
+}
