@@ -199,7 +199,7 @@
 
         <div class="email_button container">
 
-          <input id="email" class="input_email empty col-xs-offset-3 col-xs-5 " type="text" name="adres" onkeydown="check(this.value)" placeholder="Wprowadź swój email"/>
+          <input id="email" class="input_email empty col-xs-offset-3 col-xs-5 " type="text" name="adres" onkeyup="check(this.value)" placeholder="Wprowadź swój email"/>
 
           <input id="button" type="button" value="Wyślij" class="input_button col-xs-1 "  />
 
@@ -208,7 +208,7 @@
         <div class="zgoda container">
 
           <div class="col-xs-offset-1 col-xs-1 row">
-            <input  id="checkbox" type="checkbox" value="zgoda" title="" onclick="button_disabled()"/>
+            <input  id="checkbox" type="checkbox" value="zgoda" title="" />
           </div>
 
           <p class="text_zgoda col-xs-9 row">Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o
