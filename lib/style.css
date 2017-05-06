@@ -550,9 +550,12 @@ bottom: 1px;
   outline: none;
 }
 #game{
+  height: 420px;
+  text-align: center;
   display:none;
 }
 
 canvas {
+  margin-top: 20px;
   background-image: url("../lib/game/road.png");
 }
