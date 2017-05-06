@@ -555,6 +555,60 @@ bottom: 1px;
   display:none;
 }
 
+
+#cookieinfo * {
+  margin: 0px;
+  padding: 0px;
+}
+
+#cookieinfo {
+  position: fixed;
+  font-size: 12px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-color: #B54328;
+  padding: 20px;
+  z-index: 1000;
+}
+
+#cookieinfo h6 {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 7px;
+}
+
+#cookieinfo p {
+  font-size: 12px;
+  color: white;
+  line-height: 1.5em;
+}
+
+#cookieinfo a {
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 22px;
+  height: 22px;
+  border-radius: 11px;
+  line-height: 22px;
+  font-size: 12px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  background-color: white;
+
+}
+
+#cookieinfo a:hover {
+  background-color: #7C7B80;
+  color: white;
+}
+
+
+
 canvas {
   margin-top: 20px;
   background-image: url("../lib/game/road.png");
