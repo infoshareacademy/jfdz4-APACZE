@@ -127,6 +127,7 @@ body {
 }
 
 .slide {
+  max-height: 80vh;
   width: 100%;
   overflow: hidden;
   display: none;
@@ -145,6 +146,11 @@ body {
   transform: translate(-50%,-50%);
   width: 400px;
   background: rgba(181, 67, 40, 0.7);
+}
+
+.assign-button > a > h2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 
