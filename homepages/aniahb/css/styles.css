@@ -69,7 +69,7 @@ header, main {
 }
 
 li a:hover {
-    background-color: #3cc47c;
+    background-color: #e8dbb3;
 }
 
 h3, p {
@@ -81,15 +81,15 @@ h3, p {
 }
 
 #divSecOMnie {
-    background-color: #e9c893;
+    background-color: #bdffaf;
 }
 
 #divSecPortfolio {
-    background-color: #3cc47c;
+    background-color: #e8dbb3;
 }
 
 #divSecHobby {
-    background-color: #828081;
+    background-color: #ffdad5;
 }
 
 .blok {
@@ -100,7 +100,7 @@ h3, p {
 }
 
 #kontakt {
-    background-color: #3cc47c;
+    background-color: #cbb7e8;
 }
 
 #linkKontakt {
@@ -112,7 +112,7 @@ h3, p {
 }
 
 footer {
-    background-color: #e9c893;
+    background-color: #b6f6ff;
     text-align: center;
 }
 
